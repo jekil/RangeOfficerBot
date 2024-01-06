@@ -20,8 +20,8 @@ Range Officer Bot can work in two modes:
 
 In Stage Mode you can also simulate, with a random probability of 20%, the Range Officer giving you some special commands:
 
-- *"Stop"*, during the execution of your dry fire exercise to simulate the Range Officer stopping you for an issue (IPSC rule 8.3.5).
-- *"Safety, Holster"*, at the end of your dry fire exercise to simulate putting your gun loaded in holster
+- *"Stop"*, during the execution of your dry fire exercise to simulate the Range Officer stopping you for an issue (IPSC rule 8.3.5). This helps you to train to react to "stop" when Range Officer detects a violation or an issue.
+- *"Safety, Holster"*, at the end of your dry fire exercise to simulate putting your loaded gun in holster
 
 ## How To
 
