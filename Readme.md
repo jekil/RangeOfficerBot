@@ -10,18 +10,18 @@ Range Officer Bot can work in two modes:
 - **Beep Mode**: plays only a start signal (beep), it can be used to test your reflexes.
 - **Stage Mode**: simulate the execution of a stage, with Range Officer Bot giving you all the commands from [IPSC Handgun Competition Rules](https://www.ipsc.org/wp-content/uploads/2023/12/IPSC-Handgun-Competition-Rules-Jan-2024-Edition-Final-27-Dec-2023.pdf). The normal prcedure is simulated:
 
-    - Start of "the Course of Fire" with "Load And Make Ready" command (IPSC rule 8.3.1).
-    - "Are You Ready?" command (IPSC rule 8.3.2).
-    - "Standby" command (IPSC rule 8.3.3).
+    - Start of "the Course of Fire" with *"Load And Make Ready"* command (IPSC rule 8.3.1).
+    - *"Are You Ready?"* command (IPSC rule 8.3.2).
+    - *"Standby"* command (IPSC rule 8.3.3).
     - Random 1 to 4 seconds delay of start signal (beep) after timer trigger (IPSC rule 8.3.3 and rule 8.3.4).
     - Wait for a custom delay, giving you the time to execute your dry fire exercise.
-    - Finished the dry fire exercise gives the command "If You Are Finished, Unload And Show Clear" (IPSC rule 8.3.6).
-    - Put your gun in holster with command "If Clear, Hammer Down, Holster" (IPSC rule 8.3.7).
+    - Finished the dry fire exercise gives the command *"If You Are Finished, Unload And Show Clear"* (IPSC rule 8.3.6).
+    - Put your gun in holster with command *"If Clear, Hammer Down, Holster"* (IPSC rule 8.3.7).
 
 In Stage Mode you can also simulate, with a random probability of 20%, the Range Officer giving you some special commands:
 
-    - "Stop", during the execution of your dry fire exercise to simulate the Range Officer stopping you for an issue (IPSC rule 8.3.5).
-    - "Safety, Holster", at the end of your dry fire exercise to simulate putting your gun loaded in holster
+- *"Stop"*, during the execution of your dry fire exercise to simulate the Range Officer stopping you for an issue (IPSC rule 8.3.5).
+- *"Safety, Holster"*, at the end of your dry fire exercise to simulate putting your gun loaded in holster
 
 ## How To
 
@@ -31,7 +31,7 @@ You need to install required dependencies with the command (I suggest to use a [
 
     pip install -r requirements.txt
 
-You can print the help with option *-h*::
+You can print the help with option `-h`::
 
     $ python rof.py -h
     usage: ROF [-h] [-b] [-r] [-s] [-p] [-y] [-t EXERCISE_TIME] [-c {female,male}]
