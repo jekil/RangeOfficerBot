@@ -97,8 +97,8 @@ def end_loop():
     print("Range office is working again!")
     sleep(1)
 
-if __name__ == "__main__":
-    # Options parsing.
+def args_parsing():
+    """Parsing command line arguments."""
     parser = argparse.ArgumentParser(
                 prog="ROF",
                 description="Simulate a IPSC Range Officer for Handgun competitions",
@@ -111,7 +111,10 @@ if __name__ == "__main__":
     parser.add_argument("-t", "--exercise-time", dest="exercise_time", action="store", default=4, help="Time needed to shot the stage")
     parser.add_argument("-c", "--character", dest="character", action="store", choices=["female", "male"], default="male", help="Select Range Officer character")
     args = parser.parse_args()
+    return args
 
+def run(args):
+    """Game logic."""
     # Safety check.
     if args.beep and args.stage:
         print("You cannot use beep mode and stage mode at the same time. Exiting.")
@@ -145,3 +148,13 @@ if __name__ == "__main__":
         else:
             print("Selected mode: stage.")
             run_stage(args)
+
+if __name__ == "__main__":
+    # Options parsing.
+    args = args_parsing()
+    try:
+        run(args)
+    except KeyboardInterrupt:
+        print("Simulation interrupted.")
+
+    
