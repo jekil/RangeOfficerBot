@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+#
 # Range Officer Bot is your companion in IPSC Handgun training.
 # Copyright (C) 2024 Alessandro Tanasi
 #
@@ -90,7 +92,7 @@ def end_loop():
     sleep(1)
 
 if __name__ == "__main__":
-
+    # Options parsing.
     parser = argparse.ArgumentParser(
                 prog="ROF",
                 description="Simulate a IPSC Range Officer for Handgun competitions",
@@ -109,25 +111,31 @@ if __name__ == "__main__":
         print("You cannot use beep mode and stage mode at the same time. Exiting.")
     elif not args.beep and not args.stage:
         print("No selected mode. Using stage mode as default.")
+        print("You can use -h to print help menu.")
         args.stage = True
 
     # Main login.
+    # Beep mode.
     if args.beep:
+        # Repeat mode.
         if args.repeat:
             while True:
                 print("Selected mode: beeper (repeat).")
                 random_beep()
                 end_loop()
+        # Single run.
         else:
             print("Selected mode: beeper.")
             random_beep()
+    # Stage mode.
     elif args.stage:
+        # Repeat mode.
         if args.repeat:
             while True:
                 print("Selected mode: stage (repeat).")
                 run_stage(args)
                 end_loop()
+        # Single run.
         else:
             print("Selected mode: stage.")
             run_stage(args)
-
