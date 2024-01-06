@@ -27,11 +27,11 @@ In Stage Mode you can also simulate, with a random probability of 20%, the Range
 
 Range Officer Bot is a command line tool, written in Python and requires Python 3 to work.
 
-You need to install required dependencies with the command (I suggest to use a [virtualenv](https://virtualenv.pypa.io/en/latest/))::
+You need to install required dependencies with the command (I suggest to use a [virtualenv](https://virtualenv.pypa.io/en/latest/)):
 
     pip install -r requirements.txt
 
-You can print the help with option `-h`::
+You can print the help with option `-h`:
 
     $ python rof.py -h
     usage: ROF [-h] [-b] [-r] [-s] [-p] [-y] [-t EXERCISE_TIME] [-c {female,male}]
