@@ -68,20 +68,26 @@ def run_stage(args):
     print("Are you ready?")
     play_sound("ARE_YOU_READY_" + args.character.upper())
     sleep(2)
+    print("Standby")
     play_sound("STANDBY_" + args.character.upper())
     random_beep()
     # Random STOP given by Range Officer.
     if args.stop and randint(1, 5) == 1:
         sleep(randint(0, args.exception))
+        print("Stop")
         play_sound("STOP" + args.character.upper())
     else:
+        # Time needed to execute your dry fire exercise.
         sleep(args.exercise_time)
     # Random SAFETY given by Range Officer.
     if args.safety and randint(1, 5) == 1:
+        print("Safety. Holster.")
         play_sound("SAFETY_" + args.character.upper())
     else:
+        print("If you are finished, unload and show clear")
         play_sound("IF_FINISHED_" + args.character.upper())
         sleep(4)
+        print("If clear, hammer down, holster")
         play_sound("IF_CLEAR_" + args.character.upper())
 
 def end_loop():
