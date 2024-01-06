@@ -1,7 +1,7 @@
 # Range Officer Bot
 
 Range Officer Bot is a software developed to help you running your dry fire exercise for ISPC Handgun simulating a real stage.
-This project was created with ❤️ by [jekil](https://jekil.sexy) to help you in a better a safe training for IPSC competitions.
+This project was created with ❤️ by [jekil](https://jekil.sexy) to help you in a more realistic and safer training for IPSC competitions.
 
 ## Features
 
