@@ -131,6 +131,7 @@ def run(args):
             while True:
                 print("Selected mode: beeper (repeat).")
                 random_beep()
+                sleep(int(args.exercise_time))
                 end_loop()
         # Single run.
         else:
