@@ -52,6 +52,66 @@ You can print the help with option `-h`:
 
     Thanks for playing!
 
+Unmute your speaker, you need the sound system working.
+
+For example, if you want to just have a beep, run the following command:
+
+    $ python rof.py -b
+    Selected mode: beeper.
+    BEEP
+
+If you want to repeat it forever with 40 seconds to run your dry fire, run the following command (you can exit with CTRL+C):
+
+    $ python rof.py -b -r -t 40
+    Selected mode: beeper (repeat).
+    BEEP
+    Range Officer completed the job!
+    Range office is working again!
+    Selected mode: beeper (repeat).
+    BEEP
+    Range Officer completed the job!
+
+For example, if you simulate a stage, run the following command:
+
+    $ python rof.py -s         
+    Selected mode: stage.
+    Load and make ready
+    Are you ready?
+    Standby
+    BEEP
+    If you are finished, unload and show clear
+    If clear, hammer down, holster
+
+If you want to repeat it forever with 40 seconds to run your dry fire, run the following command (you can exit with CTRL+C):
+
+    $ python rof.py -s -r -t 40
+    Selected mode: stage (repeat).
+    Load and make ready
+    Are you ready?
+    Standby
+    BEEP
+    If you are finished, unload and show clear
+    If clear, hammer down, holster
+    Range Officer completed the job!
+    Range office is working again!
+    Selected mode: stage (repeat).
+    Load and make ready
+    Are you ready?
+    Standby
+    BEEP
+    If you are finished, unload and show clear
+    If clear, hammer down, holster
+    Range Officer completed the job!
+    Range office is working again!
+    Selected mode: stage (repeat).
+    Load and make ready
+    Are you ready?
+    Standby
+    BEEP
+    If you are finished, unload and show clear
+    If clear, hammer down, holster
+    Range Officer completed the job!
+
 ## Credits
 
 Sounds has been created using Text-To-Speech from [TTSMP3](https://ttsmp3.com/), using Kimberly profile for female character and Matthew profile for male character.
