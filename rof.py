@@ -78,7 +78,7 @@ def run_stage(args):
         play_sound("STOP" + args.character.upper())
     else:
         # Time needed to execute your dry fire exercise.
-        sleep(int(args.exercise_time)
+        sleep(int(args.exercise_time))
     # Random SAFETY given by Range Officer.
     if args.safety and randint(1, 5) == 1:
         print("Safety. Holster.")
